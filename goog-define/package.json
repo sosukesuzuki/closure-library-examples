@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:1": "google-closure-compiler --js uncompiled-mode.js --js_output_file compiled-mode-1.js",
+    "compile:2": "google-closure-compiler --js uncompiled-mode.js --js_output_file compiled-mode-2.js --define='goog.HELLO_WORLD2=\"Injected by --define option\"'",
+    "compile": "npm run compile:1 && npm run compile:2"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "google-closure-compiler": "^20210601.0.0",
     "google-closure-library": "^20210601.0.0"
   }
 }

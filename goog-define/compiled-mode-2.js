@@ -1,0 +1,1 @@
+require("google-closure-library");goog.global.CLOSURE_DEFINES={"goog.HELLO_WORLD2":"NOT HELLO, WORLD"};goog.HELLO_WORLD1="HELLO, WORLD";goog.HELLO_WORLD2="Injected by --define option";console.log(goog.HELLO_WORLD1);console.log(goog.HELLO_WORLD2);
